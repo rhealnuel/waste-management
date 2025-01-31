@@ -81,33 +81,36 @@ const Search = () => {
 
   return (
 
-    <div className='flex flex-col gap-20 px-20 py-10 bg-[#E3F2E1]'>
+    <div className='flex flex-col gap-4 lg:gap-20 px-4 lg:px-20 py-10 bg-[#E3F2E1]'>
         {/* text */}
         <div>
-            <p className='text-[#71BC68] text-[36px]'>HOW DOES  THE PROCESS WORK?</p>
+            <p className='text-[#71BC68] text-center  text-[26px] md:text-[36px] lg:text-[36px]'>HOW DOES  THE PROCESS WORK?</p>
         </div>
         
-        <div  className='flex bg-[#71BC68] rounded-[15px] p-5 md:w-auto'>
-            <div>
-            <div className='flex justify-center ml-[400px]'>
-                    <LuSearch className=' absolute ml-[170px] mt-2 text-[#71BC68] cursor-pointer  text-[22px]' />
-                    <input type="text" placeholder='SEARCH HERE ' className='p-2  w-[230px] outline-none rounded-full text-[12px] text-[#71BC68]' /> 
+        <div  className='flex flex-col gap-6 bg-[#71BC68] rounded-[15px] p-5 md:w-auto w-[100%] items-center'>
+            <div className='flex justify-center w-[90%] lg:w-[50%] bg-white rounded-lg items-center px-2'>
+                    <input type="text" placeholder='SEARCH HERE ' className='p-2 w-[100%] outline-none rounded-lg text-[12px] text-[#71BC68]' /> 
+                    <LuSearch className=' text-[#71BC68] cursor-pointer  text-[22px]' />
 
-                </div>
-               
-            {
-                iconsArray.map((item)=>(
-                    <div className='flex items-center gap-4 '>
-                        
-                        <div className='text-[65px]'>{item.icons}</div>
-                        <div><p className='text-[44px] font-[400] text-[#fff] py-4'>{item.text}</p></div>
-                    </div>
-                ))
-            }
             </div>
+            <div className='flex flex-col gap-4 lg:flex-row justify-between w-[90%] items-center'>
+                <div className='flex lg:flex-col justify-evenly w-[100%]'>
+                    {
+                        iconsArray.map((item)=>(
+                            <div className='flex flex-col lg:flex-row items-center lg:gap-4  '>
+                                
+                                <div className='lg:text-[65px] text-[20px]'>{item.icons}</div>
+                                <div><p className='lg:text-[44px] text-[14px] font-[400] text-[#fff] lg:py-4'>{item.text}</p></div>
+                            </div>
+                        ))
+                    }
+                
+                </div>
 
-            <div className=' ml-[-160px] mt-14'>
-                <img src={mapimage} alt="" className='w-[1900px] h-[400px]'/>
+                <div className=' w-full'>
+                    <img src={mapimage} alt="" className='lg:w-[100%]'/>
+                </div>
+
             </div>
         </div>
 

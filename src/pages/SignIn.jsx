@@ -108,21 +108,21 @@ const compare = (e) => {
     }
 }
     return ( 
-        <div className="flex items-center justify-center w-[100%] py-32 relative overflow-hidden">
+        <div className="flex items-center justify-center w-[100%] lg:py-32 py-6 relative overflow-hidden">
 
             <div>
-                <div className="absolute left-[-350px] top-[-400px] rotate-45 "> 
+                <div className="absolute left-[-350px] top-[-400px] rotate-45 lg:flex hidden "> 
                     <Square />
                 </div>
                  
-                 <div className="absolute right-[-570px] bottom-[-400px] rotate-45 " >
+                 <div className="absolute right-[-570px] bottom-[-400px] rotate-45  lg:flex hidden " >
                     <Squaretwo/>
                  </div>
 
 
 
             </div>
-            <div className="bg-[#F6FBF9] p-10 border-none rounded-[20px] w-[30%] h-fit">
+            <div className="bg-[#F6FBF9] p-10 border-none rounded-[20px] lg:w-[30%] h-fit">
 
             <h1 className="mb-8 text-center">{isSignUp ? "Create An Account" : "Glad to see you again!"} </h1>
 
@@ -172,7 +172,7 @@ const compare = (e) => {
                 }
                 <p className="text-red-500 italic">{err}</p>
 
-                <div className="flex items-center justify-center mb-5"><button onClick={ handleSubmit } className="bg-[#E3F2E1] text-[22px] font-[700] text-[#71BC68] p-4 rounded-2xl w-48 h-12 flex items-center justify-center hover:bg-green-500 hover:text-white  ">{isSignUp ? "Sign Up" : "Sign In"}</button> </div>
+                <div className="flex items-center justify-center mb-5"><button onClick={ handleSubmit } className="bg-[#E3F2E1] lg:text-[22px] w-full font-[700] text-[#71BC68] p-4 rounded-2xl lg:w-48 h-12 flex items-center justify-center hover:bg-green-500 hover:text-white  ">{isSignUp ? "Sign Up" : "Sign In"}</button> </div>
 
                 <div className="flex items-center justify-center"><h2>{isSignUp ? "Already have an account?": " Don't Have An Account?"} <span className=" cursor-pointer hover:underline text-[#71BC68] " onClick={() => setIsSignUp(!isSignUp)}>{isSignUp ? "Sign In" : "Sign Up"}</span></h2> </div>
                 

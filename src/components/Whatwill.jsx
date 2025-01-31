@@ -28,7 +28,7 @@ const Whatwill = () => {
   return (
     <div className='grid lg:grid-cols-4 lg:px-20 px-4 py-10 gap-12 text-[#fff]  '>
         <div className='flex flex-col gap-7 lg:items-start items-center'>
-            <div className='text-[36px] font-[600] text-center lg:text-start'>
+            <div className='lg:text-[36px] text-[26px] font-[600] text-center lg:text-start'>
             What will you get by giving away of your E-waste?
             </div>
 
@@ -41,7 +41,7 @@ const Whatwill = () => {
             {
                 whatwillArray.map((item)=>(
                     <div className='flex flex-col gap-4 items-center text-center lg:text-start lg:items-start '>
-                        <div><img src={item.image} alt="" /></div>
+                        <div className=''><img src={item.image} alt="" /></div>
                         <div><p>{item.head}</p></div>
                         <div><p className='text-[14px]'>{item.text}</p></div>
                     </div>

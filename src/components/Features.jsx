@@ -37,7 +37,7 @@ const Features = () => {
                         <h4 className='text-[14px] font-[400]'>FEATURES</h4>
                     </div>
                     <div>
-                        <p className='lg:text-[38px] text-[25px] text-center lg:text-start font-[650]'>
+                        <p className='lg:text-[38px] text-[26px] text-center lg:text-start font-[650]'>
                             What we do with your E-Waste.
                         </p>
                     </div>
@@ -48,7 +48,7 @@ const Features = () => {
                 
             {
                 featureArray.map((item)=>(
-                    <div className='flex flex-col gap-4 items-center lg:items-start '>
+                    <div className='flex flex-col gap-4 items-center text-center lg:text-start lg:items-start '>
                         <div><img src={item.image} alt="" /></div>
                         <div><p className=' font-[600]'>{item.head}</p></div>
                         <div><p className=''>{item.text}</p></div>
