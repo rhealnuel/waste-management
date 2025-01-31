@@ -108,7 +108,7 @@ const compare = (e) => {
     }
 }
     return ( 
-        <div className="flex items-center justify-center w-[100%] lg:py-32 py-6 relative overflow-hidden">
+        <div className="flex items-center justify-center  w-[100%] py-32  relative overflow-hidden">
 
             <div>
                 <div className="absolute left-[-350px] top-[-400px] rotate-45 lg:flex hidden "> 
