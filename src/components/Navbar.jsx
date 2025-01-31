@@ -15,7 +15,7 @@ const Navbar = (props) => {
     }
 
     return ( 
-        <div className="fixed w-full" >
+        <div className="fixed w-full z-[2000] " >
 
         <div className="bg-[#E3F2E1]  flex justify-between items-center h-[70px]  lg:px-10 px-6  mx-2 py-2 rounded-2xl">
             <div className="logo text-[#71BC68] font-semibold text-md md:text-lg lg:text-2xl ">
