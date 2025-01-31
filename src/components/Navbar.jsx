@@ -15,11 +15,11 @@ const Navbar = (props) => {
     }
 
     return ( 
-        <div >
+        <div className="fixed w-full" >
 
         <div className="bg-[#E3F2E1]  flex justify-between items-center h-[70px]  lg:px-10 px-6  mx-2 py-2 rounded-2xl">
-            <div className="logo text-[#71BC68] font-semibold text-md md:text-lg lg:text-2xl">
-                <img src={imgOne} alt="image" className="w-[55px] h-[65px]" />
+            <div className="logo text-[#71BC68] font-semibold text-md md:text-lg lg:text-2xl ">
+                <img src={imgOne} alt="image" className="w-[55px] full p-2" />
             </div>
             <div className="links text-[#71BC68] hidden lg:flex items-center">
                 <Link to="/" className="mr-8 font-semibold" >Home</Link>
